@@ -19,11 +19,11 @@ public class HealthBar : MonoBehaviour
         _player.HealthChanged -= OnHealthChanged;
     }
 
-    private void OnHealthChanged(float value)
+    private void OnHealthChanged(int value)
     {
         if (_hearts.Count < value)
         {
-            float createHeart = value - _hearts.Count;
+            int createHeart = value - _hearts.Count;
             for (int i = 0; i < createHeart; i++)
             {
                 CreateHeart();
@@ -31,7 +31,7 @@ public class HealthBar : MonoBehaviour
         }
         else if(_hearts.Count > value)
         {
-            float deleteHealth = _hearts.Count - value;
+            int deleteHealth = _hearts.Count - value;
             for (int i = 0; i < deleteHealth; i++)
             {
                 DestroyHeart(_hearts[_hearts.Count - 1]);

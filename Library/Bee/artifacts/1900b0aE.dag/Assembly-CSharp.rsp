@@ -401,6 +401,7 @@
 "Assets/Game/Scripts/UI/GameOver/GameOverScreenAnimation.cs"
 "Assets/Game/Scripts/UI/Health/HealthBar.cs"
 "Assets/Game/Scripts/UI/Health/Heart.cs"
+"Assets/Game/Scripts/UI/Parallax.cs"
 -langversion:9.0
 
 /deterministic

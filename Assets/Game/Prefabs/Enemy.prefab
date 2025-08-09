@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1359683809035888705}
   - component: {fileID: 6881814152775238191}
   - component: {fileID: 8488593581763080923}
+  - component: {fileID: 5385324080414885918}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -127,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb96e85100cfcb4fa286e01aa88c5e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 0.73
+  _damage: 1
 --- !u!114 &6881814152775238191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,3 +201,24 @@ PolygonCollider2D:
       - {x: 0.63590497, y: 0.49444434}
       - {x: 0.6339943, y: 0.8329308}
   m_UseDelaunayMesh: 0
+--- !u!95 &5385324080414885918
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6856499294656223889}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b89075870bda4a842986749af39b42b4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

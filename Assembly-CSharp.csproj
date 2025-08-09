@@ -56,6 +56,7 @@
      <Compile Include="Assets\Game\Scripts\UI\GameOver\Button\RestartButtonAnimate.cs" />
      <Compile Include="Assets\Game\Scripts\SpawnerObjects\ObjectPool.cs" />
      <Compile Include="Assets\Game\Scripts\Player\Player.cs" />
+     <Compile Include="Assets\Game\Scripts\UI\Parallax.cs" />
      <Compile Include="Assets\Game\Scripts\UI\GameOver\GameOverScreenAnimation.cs" />
      <Compile Include="Assets\Game\Scripts\Player\PlayerMover.cs" />
      <Compile Include="Assets\Game\Scripts\UI\Health\Heart.cs" />

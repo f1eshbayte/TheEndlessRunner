@@ -25,6 +25,12 @@ public class Heart : MonoBehaviour
     {
         StartCoroutine(Filling(1, 0, _lerpDuratoin, Destroy));
     }
+    public void SetFillAmount(float fill)
+    {
+        StopAllCoroutines();
+        _image.fillAmount = fill;
+    }
+
 
     private IEnumerator Filling(float startValue, float endValue, float duratoin, UnityAction<float> lerpingEnd)
     {
@@ -41,6 +47,7 @@ public class Heart : MonoBehaviour
         lerpingEnd?.Invoke(endValue);
     }
 
+    
     private void Destroy(float value)
     {
         _image.fillAmount = value;

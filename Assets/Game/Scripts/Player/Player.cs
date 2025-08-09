@@ -3,16 +3,16 @@ using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float _health;
+    [SerializeField] private int _health;
 
-    public event UnityAction<float> HealthChanged;
+    public event UnityAction<int> HealthChanged;
     public event UnityAction Died;
     private void Start()
     {
         HealthChanged?.Invoke(_health);
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(int damage)
     {
         _health -= damage;
         HealthChanged?.Invoke(_health);
@@ -25,4 +25,5 @@ public class Player : MonoBehaviour
     {
         Died?.Invoke();
     }
+    
 }
