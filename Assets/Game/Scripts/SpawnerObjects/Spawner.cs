@@ -3,7 +3,7 @@ using Random = UnityEngine.Random;
 
 public class Spawner : ObjectPool
 {
-    [SerializeField] private GameObject _enemyPrefab;
+    [SerializeField] private GameObject[] _enemyTemplates;
     [SerializeField] private Transform[] _spawnPoints;
     [SerializeField] private float _secondsBetweenSpawn;
 
@@ -12,7 +12,7 @@ public class Spawner : ObjectPool
 
     private void Start()
     {
-        Initialize(_enemyPrefab);
+        Initialize(_enemyTemplates);
     }
 
     private void Update()

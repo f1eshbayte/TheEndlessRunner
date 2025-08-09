@@ -394,11 +394,13 @@
 "Assets/Game/Scripts/Player/PlayerMover.cs"
 "Assets/Game/Scripts/SpawnerObjects/ObjectPool.cs"
 "Assets/Game/Scripts/SpawnerObjects/Spawner.cs"
-"Assets/Game/Scripts/UI/ExitButtonAnimate.cs"
-"Assets/Game/Scripts/UI/GameOverlayScreen.cs"
-"Assets/Game/Scripts/UI/GameOverScreenAnimation.cs"
-"Assets/Game/Scripts/UI/HealthDisplay.cs"
-"Assets/Game/Scripts/UI/RestartButtonAnimate.cs"
+"Assets/Game/Scripts/UI/GameOver/Button/BaseButtonAnimate.cs"
+"Assets/Game/Scripts/UI/GameOver/Button/ExitButtonAnimate.cs"
+"Assets/Game/Scripts/UI/GameOver/Button/RestartButtonAnimate.cs"
+"Assets/Game/Scripts/UI/GameOver/GameOverlayScreen.cs"
+"Assets/Game/Scripts/UI/GameOver/GameOverScreenAnimation.cs"
+"Assets/Game/Scripts/UI/Health/HealthBar.cs"
+"Assets/Game/Scripts/UI/Health/Heart.cs"
 -langversion:9.0
 
 /deterministic

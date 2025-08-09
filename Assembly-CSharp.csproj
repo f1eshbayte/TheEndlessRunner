@@ -45,24 +45,27 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Game\Scripts\UI\GameOverScreenAnimation.cs" />
+     <Compile Include="Assets\Game\Scripts\UI\GameOver\Button\ExitButtonAnimate.cs" />
      <Compile Include="Assets\Game\Scripts\Enemy\Enemy.cs" />
      <Compile Include="Assets\Game\Scripts\Enemy\EnemyMover.cs" />
-     <Compile Include="Assets\Game\Scripts\UI\HealthDisplay.cs" />
-     <Compile Include="Assets\Game\Scripts\UI\GameOverlayScreen.cs" />
-     <Compile Include="Assets\Game\Scripts\UI\ExitButtonAnimate.cs" />
+     <Compile Include="Assets\Game\Scripts\UI\GameOver\Button\BaseButtonAnimate.cs" />
+     <Compile Include="Assets\Game\Scripts\UI\GameOver\GameOverlayScreen.cs" />
+     <Compile Include="Assets\Game\Scripts\UI\Health\HealthBar.cs" />
      <Compile Include="Assets\Game\Scripts\SpawnerObjects\Spawner.cs" />
      <Compile Include="Assets\Game\Scripts\Player\PlayerInput.cs" />
-     <Compile Include="Assets\Game\Scripts\UI\RestartButtonAnimate.cs" />
+     <Compile Include="Assets\Game\Scripts\UI\GameOver\Button\RestartButtonAnimate.cs" />
      <Compile Include="Assets\Game\Scripts\SpawnerObjects\ObjectPool.cs" />
      <Compile Include="Assets\Game\Scripts\Player\Player.cs" />
+     <Compile Include="Assets\Game\Scripts\UI\GameOver\GameOverScreenAnimation.cs" />
      <Compile Include="Assets\Game\Scripts\Player\PlayerMover.cs" />
+     <Compile Include="Assets\Game\Scripts\UI\Health\Heart.cs" />
      <Folder Include="Assets" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <Folder Include="Assets\Game\Scenes" />
      <Folder Include="Assets\Game\Prefabs" />
      <Folder Include="Assets\TextMesh Pro\Sprites" />
+     <Folder Include="Assets\Game\Scripts\UI\Health" />
      <Folder Include="Assets\TextMesh Pro\Resources\Sprite Assets" />
      <Folder Include="Assets\Settings" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -91,8 +94,10 @@
      <Folder Include="Assets\TextMesh Pro\Fonts" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <Folder Include="Assets\Resources" />
+     <Folder Include="Assets\Game\Scripts\UI\GameOver\Button" />
      <Folder Include="Assets\Game" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <Folder Include="Assets\Game\Scripts\UI\GameOver" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
@@ -353,11 +358,11 @@
      <Reference Include="Unity.Collections.LowLevel.ILSupport">
      <HintPath>C:\UnityProjects\GitHub\TheEndlessRunner\Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>C:\UnityProjects\GitHub\TheEndlessRunner\Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-     </Reference>
      <Reference Include="DOTween">
      <HintPath>C:\UnityProjects\GitHub\TheEndlessRunner\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+     <HintPath>C:\UnityProjects\GitHub\TheEndlessRunner\Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>

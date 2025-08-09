@@ -15,7 +15,20 @@ public class ObjectPool : MonoBehaviour
         {
             GameObject spawned = Instantiate(prefab, _container.transform);
             spawned.SetActive(false);
-            
+
+            _pool.Add(spawned);
+        }
+    }
+
+    protected void Initialize(GameObject[] prefabs)
+    {
+        for (int i = 0; i < _capacity; i++)
+        {
+            int randomIndex = Random.Range(0, prefabs.Length);
+
+            GameObject spawned = Instantiate(prefabs[randomIndex], _container.transform);
+            spawned.SetActive(false);
+
             _pool.Add(spawned);
         }
     }
